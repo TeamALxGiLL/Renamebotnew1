@@ -260,6 +260,7 @@ async def doc(bot, update):
                     # print(f"Message ID: {msg.id}, Content: {msg.text or 'No text'}")
                     # Forward or process the message
                     if forwarded_lazy_count >= max_forward_lazy_count:
+                        forwarded_lazy_count = 0
                         break
                     got_lazy_file = msg.document or msg.video or msg.audio
 

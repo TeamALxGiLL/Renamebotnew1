@@ -369,7 +369,9 @@ async def rename(client, message):
         async for msg in lazy_userbot.iter_messages(target_chat_id, limit=100):
             # Forward or process the message
             if forwarded_lazy_count >= max_forward_lazy_count:
-                break   
+                print("✅ Forwarding limit reached. Resetting count for reuse.")
+                forwarded_lazy_count = 0  # Reset for reuse - @LazyDeveloperr
+                break  # Exit the loop after processing 20 valid files- @LazyDeveloperr
 
             # fetch files
             got_lazy_file = msg.document or msg.video or msg.audio
