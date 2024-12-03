@@ -361,12 +361,12 @@ async def rename(client, message):
     lazy_userbot = lazydeveloperrsession[user_id]
 
     # Iterating through messages
-    max_limit = 100  # High limit to fetch more messages if some are skipped
+    max_limit = 200  # High limit to fetch more messages if some are skipped
     forwarded_lazy_count = 0
     max_forward_lazy_count = MAX_FORWARD #// 20 
     skiped_lazy_files = 0 
     try:
-        async for msg in lazy_userbot.iter_messages(target_chat_id, limit=100):
+        async for msg in lazy_userbot.iter_messages(target_chat_id, limit=200):
             # Forward or process the message
             if forwarded_lazy_count >= max_forward_lazy_count:
                 print("✅ Forwarding limit reached. Resetting count for reuse.")
