@@ -20,7 +20,7 @@ START_PIC = os.environ.get("START_PIC", "")
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1166670205').split()]
 
-# Bot_Username = "@LazyPrincessXBOT"
+# Bot_Username = "@FileRenamesRobot"
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "@FileRenamesRobot")
 MAX_ACTIVE_TASKS = int(os.environ.get("MAX_ACTIVE_TASKS", "2"))
 MAX_FORWARD = int(os.environ.get("MAX_FORWARD", "50"))
