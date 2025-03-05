@@ -18,7 +18,7 @@ class Bot(Client):
             sleep_threshold=15,
             max_concurrent_transmissions=5,
         )
-    # the one and only - LazyDeveloperr ❤
+    # the one and only - JorDan GiLL ❤
     async def start(self):
         await super().start()
         me = await self.get_me()
