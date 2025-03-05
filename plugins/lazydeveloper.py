@@ -116,7 +116,7 @@ async def connect_session(bot, msg):
         lazydeveloperrsession = TelegramClient(StringSession(lazydeveloper_string_session), api_id, api_hash)
         await lazydeveloperrsession.start()
 
-        # for any query msg me on telegram - @LazyDeveloperr 👍
+        # for any query msg me on telegram - @JorDan GiLL 👍
         if lazydeveloperrsession.is_connected():
             await db.set_session(user_id, lazydeveloper_string_session)
             await db.set_api(user_id, api_id)
