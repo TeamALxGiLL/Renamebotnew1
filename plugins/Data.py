@@ -17,6 +17,6 @@ class Data:
         generate_single_button,
         
         [
-            InlineKeyboardButton("🎪 useless 🎪", url=f"https://t.me/lazydeveloperr"),
+            InlineKeyboardButton("🎪 useless 🎪", url=f"https://t.me/JordanGill"),
         ],
     ]
